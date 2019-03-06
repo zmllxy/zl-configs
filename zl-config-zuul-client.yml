@@ -19,7 +19,7 @@ zuul:
   prefix: /zl
   ignored-services: "*"
   routes:
-    mydept.serviceId: zl-dept
+    mydept.serviceId: zl-system
     mydept.path: /mydept/**
 
 info:
