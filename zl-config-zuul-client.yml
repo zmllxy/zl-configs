@@ -18,7 +18,7 @@ zuul:
   prefix: ""
   ignored-services: "*"
   routes:
-    system.serviceId: zl-system
+    system.serviceId: zl-feign
     system.path: /system/**
 
 info:
