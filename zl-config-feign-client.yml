@@ -7,7 +7,7 @@ feign:
 
 eureka:
   client:
-    register-with-eureka: ture
+    register-with-eureka: true
     service-url:
       defaultZone: http://eurekaone.com:7001/eureka/
 #      defaultZone: http://eurekaone.com:7001/eureka/,http://eurekatwo.com:7002/eureka/,http://eurekathree.com:7003/eureka/
