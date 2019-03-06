@@ -25,7 +25,7 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-      defaultZone: http://eurekaone:7001/eureka
+      defaultZone: http://eurekaone.com:7001/eureka
 #       defaultZone: http://eurekaone.com:7001/eureka/,http://eurekatwo.com:7002/eureka/,http://eurekathree.com:7003/eureka/
   instance:
     instance-id: system
