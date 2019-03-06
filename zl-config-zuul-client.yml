@@ -14,19 +14,12 @@ eureka:
     instance-id: zl-zuul.com
     prefer-ip-address: true
 
-
 zuul:
-  prefix: /zl
+  prefix: ""
   ignored-services: "*"
   routes:
-    mydept.serviceId: zl-system
-    mydept.path: /mydept/**
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
+    system.serviceId: zl-system
+    system.path: /system/**
 
 info:
   app.name: zl-zuul
