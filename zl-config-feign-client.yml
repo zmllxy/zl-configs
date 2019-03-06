@@ -7,7 +7,16 @@ feign:
 
 eureka:
   client:
-    register-with-eureka: false
+    register-with-eureka: ture
     service-url:
       defaultZone: http://eurekaone.com:7001/eureka/
 #      defaultZone: http://eurekaone.com:7001/eureka/,http://eurekatwo.com:7002/eureka/,http://eurekathree.com:7003/eureka/
+  instance:
+    instance-id: zl-feign.com
+    prefer-ip-address: true
+
+info:
+  app.name: zl-feign
+  company.name: www.zl.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
