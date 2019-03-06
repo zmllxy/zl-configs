@@ -1,0 +1,30 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: zl-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eurekaone.com:7001/eureka
+#      defaultZone: http://eurekaone.com:7001/eureka,http://eurekatwo.com:7002/eureka,http://eurekathree.com:7003/eureka
+  instance:
+    instance-id: zl-zuul.com
+    prefer-ip-address: true
+
+
+zuul:
+  prefix: /zl
+  ignored-services: "*"
+  routes:
+    mydept.serviceId: zl-dept
+    mydept.path: /mydept/**
+
+info:
+  app.name: zl-zuul
+  company.name: www.zl.com
+  build.artifactId: $project.artifactId$
+  build.version: $project.version$
+
