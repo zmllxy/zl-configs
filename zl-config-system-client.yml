@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8002
 
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
@@ -28,11 +28,11 @@ eureka:
       defaultZone: http://eurekaone.com:7001/eureka
 #       defaultZone: http://eurekaone.com:7001/eureka/,http://eurekatwo.com:7002/eureka/,http://eurekathree.com:7003/eureka/
   instance:
-    instance-id: system
+    instance-id: zl-system
     prefer-ip-address: true     #访问路径可以显示IP地址
 
 info:
-  app.name: system
+  app.name: zl-system
   company.name: www.zl.com
   build.artifactId: $project.artifactId$
   build.version: $project.version$
